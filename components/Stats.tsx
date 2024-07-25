@@ -12,8 +12,8 @@ const stats = [
     text: "Projects of completed",
   },
   {
-    num: 5,
-    text: "Most used languages",
+    num: 2,
+    text: "Frameworks (React, Next)",
   },
   {
     num: 81,

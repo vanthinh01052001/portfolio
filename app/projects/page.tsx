@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { motion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import doct from '../../public/assets/projects/img-doct.png'
+import blog from "../../public/assets/projects/img-mernblog.png";
 import {
   Tooltip,
   TooltipContent,
@@ -18,7 +20,7 @@ const projects = [
   {
     num: "01",
     category: "fullstack",
-    title: "mern-blog",
+    title: "blog",
     description:
       "Manage personal blogs, allowing users to comment on each posted blog",
     stack: [
@@ -35,7 +37,7 @@ const projects = [
         name: "Express.js",
       },
     ],
-    image: "/assets/work/img-mernblog.png",
+    image: blog,
     live: "https://mern-blog-om9w.onrender.com/",
     github: "https://github.com/vanthinh01052001/mern-blog",
   },
@@ -52,7 +54,7 @@ const projects = [
         name: "Taiwind.css",
       },
     ],
-    image: "/assets/work/img-doct.png",
+    image: doct,
     live: "https://doct-iwwuwwwxd-vanthinhs-projects.vercel.app/",
     github: "https://github.com/vanthinh01052001/doct",
   },
@@ -79,7 +81,7 @@ const ProjectsPage = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title} project
               </h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
