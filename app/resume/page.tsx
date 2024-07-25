@@ -87,7 +87,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Html, Css, JavaScript, Sass, Tailwind, React.js, Next.js, Node.js, Express.js",
+    "Html, Css, JavaScript, React.js, Next.js, Tailwind.css, Node.js, Figma, ...",
   skillList: [
     {
       icon: <FaHtml5 />,

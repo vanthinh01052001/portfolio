@@ -3,8 +3,11 @@ import React from 'react'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedinIn />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/vanthinh01052001" },
+  {
+    icon: <FaLinkedinIn />,
+    path: "https://www.linkedin.com/in/mai-văn-thinh-b24681288",
+  },
 ];
 interface ISocialProps{
     containerStyles?: string;

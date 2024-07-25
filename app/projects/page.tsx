@@ -35,7 +35,7 @@ const projects = [
         name: "Express.js",
       },
     ],
-    image: "/assets/work/img-mernblog.PNG",
+    image: "/assets/work/img-mernblog.png",
     live: "https://mern-blog-om9w.onrender.com/",
     github: "https://github.com/vanthinh01052001/mern-blog",
   },
@@ -52,13 +52,13 @@ const projects = [
         name: "Taiwind.css",
       },
     ],
-    image: "/assets/work/img-doct.PNG",
+    image: "/assets/work/img-doct.png",
     live: "https://doct-iwwuwwwxd-vanthinhs-projects.vercel.app/",
     github: "https://github.com/vanthinh01052001/doct",
   },
 ];
 
-const Work = () => {
+const ProjectsPage = () => {
   const [project, setProject] = useState(projects[0]);
   const handleSlideChange = (swiper: any) =>{
     const currentIndex = swiper.activeIndex;
@@ -147,4 +147,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default ProjectsPage;
