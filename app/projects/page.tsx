@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import doct from '../../public/assets/projects/img-doct.png'
 import blog from "../../public/assets/projects/img-mernblog.png";
+import port from "../../public/assets/projects/banner-portfolio.jpg";
 import {
   Tooltip,
   TooltipContent,
@@ -22,7 +23,7 @@ const projects = [
     category: "fullstack",
     title: "blog",
     description:
-      "Manage personal blogs, allowing users to comment on each posted blog",
+      "This is where I share and update my knowledge and the technologies I frequently use, such as deploying products to Vercel, commit conventions, and more.",
     stack: [
       {
         name: "React.js",
@@ -43,6 +44,27 @@ const projects = [
   },
   {
     num: "02",
+    category: "frontend",
+    title: "Portfolio",
+    description:
+      "This is where I introduce myself, showcase my completed projects, and share valuable experiences from my career journey.",
+    stack: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Taiwind.css",
+      },
+      {
+        name: "Framer-motion",
+      },
+    ],
+    image: port,
+    live: "/",
+    github: "https://github.com/vanthinh01052001/portfolio",
+  },
+  {
+    num: "03",
     category: "frontend",
     title: "doct",
     description: "Interface for clinic management system for doctors",

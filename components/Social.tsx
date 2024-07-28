@@ -6,7 +6,7 @@ const socials = [
   { icon: <FaGithub />, path: "https://github.com/vanthinh01052001" },
   {
     icon: <FaLinkedinIn />,
-    path: "https://www.linkedin.com/in/mai-văn-thinh-b24681288",
+    path: "https://www.linkedin.com/in/mai-v%C4%83n-thinh-b24681288/",
   },
 ];
 interface ISocialProps{

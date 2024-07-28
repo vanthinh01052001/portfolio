@@ -18,13 +18,15 @@ const Home = () => {
               <span className="text-accent">Van Thinh</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              4th year information technology student, future senior-frontend
-              developer. My ambition is to apply technology AI to change way of
-              doing traditional, increase work efficiency and productivity.
+              I am a frontend developer with 6 months of experience in building
+              user interfaces. During this time, I have implemented various
+              small projects and coordinated work with team members to
+              efficiently complete tasks. I have optimized workflows to enhance
+              performance and achieved positive outcomes
             </p>
             {/* btn and socials  */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/CV_VanThinh_Frontend_En.pdf" download>
+              <a href="/CV-en_VanThinh_Frontend.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"

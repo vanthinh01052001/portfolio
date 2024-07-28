@@ -15,11 +15,12 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import Link from "next/link";
 
 const about = {
   title: "About me",
   description:
-    "4th year information technology student, future senior-frontend developer. My ambition is to apply technology AI to change way of doing traditional, increase work efficiency and productivity",
+    " I am a frontend developer with 6 months of experience in building user interfaces. During this time, I have implemented various small projects and coordinated work with team members to efficiently complete tasks. I have optimized workflows to enhance performance and achieved positive outcomes.",
   info: [
     {
       fielddName: "Name",
@@ -59,8 +60,20 @@ const about = {
 const experience = {
   icon: badge,
   title: "My experience",
-  description:
-    "Designing cut layouts in Figma with responsive UI. Handling display in Google search results. Upgrading the company's web interface.",
+  description: {
+    des1: "➖ Cut Layout Figma to Next.js",
+    subDes1: "demo: https://doct-iwwuwwwxd-vanthinhs-projects.vercel.app/",
+    des2: "Project: ALTEK COMPANY - FE",
+    des3: "Description:",
+    subDes3:
+      "+ This is the official website of ALTEK Company. This website serves as a central hub for all information and updates about ALTEK company.",
+    des4: " Technologies:",
+    subDes4: "+ Vite, React, MUI, Font Awesome, Redux, Lodash, Sass, Yup, ...",
+    des5: "Responsibilities:",
+    sub1Des5: "+ Upgrade the company web interface.",
+    sub2Des5: "+ Responsive UI Website ALTEK",
+    sub3Des5: "+ Handle show in Google search result",
+  },
   items: [
     {
       company: "ALTEK Technology Company",
@@ -74,7 +87,7 @@ const experience = {
 const education = {
   icon: cap,
   title: "My education",
-  description: "Software Technology",
+  description: "Major: Information technology",
   items: [
     {
       institution: "Sai Gon University",
@@ -150,9 +163,50 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <div>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {experience.description.des1}
+                  </p>
+                  <Link
+                    className="max-w-[600px] text-blue-400 mx-auto xl:mx-0"
+                    href="https://doct-iwwuwwwxd-vanthinhs-projects.vercel.app/"
+                  >
+                    {experience.description.subDes1}
+                  </Link>
+                </div>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experience.description}
+                  {experience.description.des2}
                 </p>
+                <div>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {experience.description.des3}
+                  </p>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 pl-5">
+                    {experience.description.subDes3}
+                  </p>
+                </div>
+                <div>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {experience.description.des4}
+                  </p>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 pl-5">
+                    {experience.description.subDes4}
+                  </p>
+                </div>
+                <div>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {experience.description.des5}
+                  </p>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 pl-5">
+                    {experience.description.sub1Des5}
+                  </p>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 pl-5">
+                    {experience.description.sub2Des5}
+                  </p>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 pl-5">
+                    {experience.description.sub3Des5}
+                  </p>
+                </div>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => (
@@ -235,10 +289,15 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => (
-                    <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                    <li
+                      key={index}
+                      className="flex items-center justify-center xl:justify-start gap-4"
+                    >
                       <span className="text-white/60">{item.fielddName}</span>
                       <span className="text-lg">{item.fieldValue}</span>
                     </li>
